@@ -1,0 +1,16 @@
+ Step 1:
+ Initially, TruffleHog or Talishman will be integrated with the development environment these tools will automatically detect hardcoded creds based on regex pattern.
+ Step 2:
+ In the Software Composition Analysis phase, different vulnerable dependencies will automatically be detected using OWASP dependency check, Snyk, Retire Js and BlackDuck.
+ Step 3:
+ Next integration step will be the SAST process where we can use SonarQube or SemGrep to detect vulnerabilities related to source code.
+ Step 4:
+ Now in step 4, we will be scanning IAC code using Clair which will be providing a detailed scan report of the docker container.
+ Step 5:
+ In the next step, we will be running DAST scan using ZAP, Nuclei scanner and it will detect all the CVEs within the application.
+ Step 6:
+ In step 6, we can use any compliance framework as per our organization’s goal to harden our system.
+ Step 7:
+ In this step, vulnerabilities that are detected in DAST can be tracked using Jira.
+ Step 8:
+ In this step, Our entire organization secrets can be managed using AWS secret manager.
